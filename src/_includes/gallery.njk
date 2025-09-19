@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: "Gallery"
+---
+<h1>Gallery</h1>
+
+{% for item in collections.gallery %}
+  <article>
+    <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+    <img src="{{ item.data.src }}" alt="{{ item.data.alt }}">
+    <p>{{ item.data.description }}</p>
+  </article>
+{% endfor %}
