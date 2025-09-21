@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="Blossomera: digital artist specializing in character art, creatures, mecha, and more. Open for commissions and custom artwork.">
+  <meta name="author" content="Blossomera">
+  <title>blossomera coming soon</title>
+  <meta property="og:title" content="blossomera, artist for hire">
+  <meta property="og:description" content="Hello, I'm Blossomera, a digital artist who specializes in character art. I'm passionate about giving personality to all kinds of subjects, from a person's pose to a table's design, fantastical creatures, and mecha or furry. I'm open for commissions and would love to help you bring your ideas to life.">
+  <meta property="og:type" content="website">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    background-color: #313f2c;
+    background: linear-gradient(180deg, rgba(49, 63, 32, 1) 0%, rgba(35, 54, 33, 1) 44%, rgba(22, 35, 18, 1) 88%, rgba(8, 24, 8, 1) 100%);
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background-wrapper {
+  background: linear-gradient(180deg, rgba(49, 63, 32, 1) 0%, rgba(35, 54, 33, 1) 33%, rgba(22, 35, 18, 1) 66%, rgba(8, 24, 8, 1) 100%);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.background-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/offset_bg.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+
+.site-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+
+.container {
+    background-color: transparent;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+
+
+.bluesky {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.bluesky img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.35s ease-in;
+}
+
+.bluesky .hover {
+    opacity: 0;
+}
+
+.bluesky:hover .hover {
+    opacity: 1;
+}
+
+.bluesky:hover .default {
+    opacity: 0; 
+}
+</style>
+
+
+
+
+<div class="site-wrapper">
+    <div class="container">
+
+        <p style="font-size:18px">Opening Soon
+        <br>The gallery is taking root</p>
+        <img src="comming soon.svg"></img>
+        <div style="max-width: 400px;">
+        <br>Hello, I'm <b style="color: rgb(255, 104, 164);">Blossomera</b> an independent artist
+        <br><br>My art gallery is currently taking root. I'm busy cultivating new art, making stickers and preparing this web space.
+
+        <br>
+        <br>Follow me on Bluesky<br><div style="height: 12px;"></div>
+    <div class="bluesky">
+        <a href="https://bsky.app/profile/blossomera.bsky.social" target="_blank" rel="noopener noreferrer">
+        <img class="default" src="bluesky_1.gif" alt="bluesky">
+        <img class="hover" src="bluesky_2.gif" alt="follow-me-on-bluesky"></a>
+    </div>
+    </div>
+<footer>
+    <p>&copy; 2025 Blossomera. All rights reserved.</p>
+</footer>
+    </div>
+    
+</div>
+
+<div class="background-wrapper"></div>
+
+</html>
